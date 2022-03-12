@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+SD card / SPI-mode / CMD17 (read single block)
+-------------------------------------------------------------------------------
+
+This set of example captures demonstrates CMD17 (read single block)
+commands reading twice after another.
+
+Diez Roggisch provided these files as public domain.
+
+
+Logic analyzer setup
+--------------------
+
+  Probe    SD card
+  ----------------
+  0        MISO
+  1        CLK
+  2        MOSI
+  3        CS#
+  4        DEBUG_PIN (10 ms pulse)
+
+Data
+----
+
+File read_single_block_twice.sr was recorded in a live setup, and
+contains two CMD17 read blocks. The block address is 1234 and the
+blocks filled with the value 123 (decimal).
+
