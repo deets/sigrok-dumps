@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+SD card / SPI-mode / CMD25 (write multiple blocks)
+-------------------------------------------------------------------------------
+
+This example captures demonstrates CMD25 (write multiple blocks).
+
+Diez Roggisch provided these files as public domain.
+
+
+Logic analyzer setup
+--------------------
+
+  Probe    SD card
+  ----------------
+  0        MISO
+  1        CLK
+  2        MOSI
+  3        CS#
+  4        DEBUG_PIN (10 ms pulse)
+
+Data
+----
+
+File write_multiple_blocks.sr was recorded in a live setup, and
+contains one CMD25 with two blocks. The start address is 0x11d7 and
+the two blocks filled with the value 123 and 170 (decimal)
+respectively.
+
